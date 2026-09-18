@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tugas 1 Pemrograman Web</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 class="header-text">Welcome to my To-Do List App</h1>
+        </header>
+        <aside>
+            <div class="task-list">
+                <h3 class="list-title">Task List</h3>
+                <ul class="task-section">
+                    <li class="task-text">
+                        <input type="checkbox" checked> <a class="task-finished">Task 1</a>
+                    </li>
+                    <li class="task-text">
+                        <input type="checkbox"> Task 2
+                    </li>
+                    <li class="task-text">
+                        <input type="checkbox"> Task 3
+                    </li>
+                    <li class="task-text">
+                        <input type="checkbox"> Task 4
+                    </li>
+                </ul>
+            </div>
+            <div class="task-details">
+                <h3 class="details-title">Task Details</h3>
+                <p class="detail-text">Select a task to view its details.</p>
+                <div class="form-group">
+                    <h5 class="details-subtitle">Title</h5>
+                    <input type="text" name="task-title" placeholder="Enter task title"><br>
+                </div>
+                <div class="form-group">
+                    <h5 class="details-subtitle">Description</h5>
+                    <textarea name="task-description" placeholder="Enter task description"></textarea><br>
+                </div>
+                <div class="form-group">
+                    <h5 class="details-subtitle">Status</h5>
+                    <select name="task-status">
+                        <option value="not-started">Not Started</option>
+                        <option value="in-progress">In Progress</option>
+                        <option value="completed">Completed</option>
+                    </select><br>
+                </div>
+                <button type="submit" class="details-button">Update Task</button>
+            </div>
+        </aside>
+        <form class="task-form">
+            <h2 class="details-title">Create New Task</h2>
+            <div class="form-group">
+                <label class="form-text">Task Title</label>
+                <input type="text" name="task-title" placeholder="Enter task title"><br>
+            </div>
+            <div class="form-group">
+                <label class="form-text">Task Description</label>
+                <textarea name="task-description" placeholder="Enter task description"></textarea><br>
+            </div>
+            <button type="submit" class="form-button">Add Task</button>
+        </form>
+        <footer class="site-footer">
+            <div class="footer-github">
+                <a href="https://www.github.com/mindofkaka" target="_blank" rel="noopener noreferrer" class="github-link">
+                    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/960px-GitHub_Invertocat_Logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="GitHub Logo" class="github-logo">
+                    <span class="github-text">GitHub</span>
+                </a>
+            </div>
+
+            <div class="footer-copyright">
+                &copy; Kaka 2026
+            </div>
+        </footer>
+    </body>
+</html>

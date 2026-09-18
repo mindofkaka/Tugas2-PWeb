@@ -1,0 +1,206 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+header {
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #1b2cc1;
+}
+
+header h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+.header-text {
+    color: #abd2fa;
+}
+
+aside {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 0;
+}
+
+.list-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #091450;
+}
+
+.details-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #abd2fa;
+    margin-bottom: 0;
+}
+
+.details-subtitle {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #abd2fa;
+    margin-top: 0;
+}
+
+.task-text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px;
+    margin-left: 50px;
+}
+
+.task-finished {
+    text-decoration: line-through;
+    color: #091450;
+}
+
+.task-section {
+    padding: 20px;
+}
+
+.task-list {
+    background-color: #abd2fa;
+}
+
+.task-details {
+    background-color: #091450;
+    padding: 25px;
+}
+
+.detail-text {
+    color: white;
+    font-size: 0.8cap;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.details-button {
+    background-color:#1b2cc1;
+    border-radius: 1cm;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.task-form {
+    background-color: #1b2cc1;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    gap: 15px;
+}
+
+.form-group input, .form-group textarea, .form-group select {
+    width: 100%;
+    min-width: 0;
+    padding: 8px;
+}
+
+.form-text {
+    color: white;
+    font-size: 2.1cap;
+}
+
+.form-button {
+    background-color:#091450;
+    border-radius: 1cm;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+}
+
+.site-footer {
+    background-color: #091540;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-family: sans-serif;
+}
+
+.github-link {
+    display: flex;
+    align-items: center;      
+    gap: 10px;                
+    color: #abd2fa;
+    text-decoration: none;     
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.github-logo {
+    width: 24px;             
+    height: 24px;
+    display: block;
+    filter: invert(86%) sepia(21%) saturate(545%) hue-rotate(187deg) brightness(103%) contrast(98%);
+    transition: filter 0.2s ease;
+}
+
+.github-link:hover {
+    color: #7692ff;           
+}
+
+.github-link:hover .github-logo {
+    filter: invert(56%) sepia(87%) saturate(2774%) hue-rotate(213deg) brightness(101%) contrast(101%);
+}
+
+.footer-copyright {
+    color: #abd2fa;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    aside {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    .task-details,
+    .task-form {
+        padding: 20px 15px;
+    }
+
+    .form-group {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    .details-subtitle,
+    .form-text {
+        margin: 0;
+        text-align: left;
+    }
+
+    .task-text {
+        margin-left: 10px;
+    }
+}
