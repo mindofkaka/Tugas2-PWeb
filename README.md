@@ -25,7 +25,6 @@ Note: If the task status is completed, the color will be black and the text will
 
 * Task Additional
 
-<video width="1000" height="500" controls>
-  <source src="assets/add-task.mp4" type="video/mp4">
-</video>
+![Add task](assets/add-task.mp4)
+
 
