@@ -1,27 +1,31 @@
-# Tugas1-PWeb
-Tugas 1 Week 2 Matkul Pemrograman Web
+# Tugas2-PWeb
+Tugas 2 Week 3 Matkul Pemrograman Web
 
 ## Name: Muhammad Ludaka Firdaus
 
 ## NRP: 5025251102
 
 ## Web Description:
-My 1 webpage contains 5 parts. The first part is the header for the title 'Welcome to my To-Do List App'. The second part is for the Task List, where the List of my Tasks whether done or not, will be written there (checked box and stripped text for finished task). The third part is Task Details where we can change every task listed in the Task List, from the title, description, and status. Under the second and third part, there is the forth task, which is Form to create a new task, every new task that is entered will be added to the second part with the 'Not Started' status. The last part is footer, that contains my GitHub Link profile and the copyright.
+My current webpage is the continuation from the previous task. The main different is my webpage now not entirely hardcoded. The user can change the task details including deadline, title, status, and notes. Beside that, the user can also add many new tasks. The new task that is entered will automatically have a 'not-started' status. To view the task details, the user can click the text of the task that show a pointer cursor if the user move the cursor to the text area. There's some minor change about the responsive. I've made the current web more responsive by changing the CSS unit from px to the more dynamic unit like vh, so it will be more accessible from many more devices.
 
 ## Preview:
 
-* Header: 
+* Change 1 (Status: Not started)
 
-![Header Part](assets/Header.png)
-* Task List: 
+![Status not started](assets/status-not-started.png)
+Note: If the task status is not started, it is normal font
+* Change 2 (Status: In Progress)
 
-![Task List Part](assets/TaskList.png)
-* Task Details: 
+![Status in progress](assets/status-in-progresss.png)
+Note: If the task status is in progress, the font will be italic and color is changed to yellow/orange
+* Change 3 (Status: Completed)
 
-![Task Details Part](assets/TaskDetails.png)
-* Task Form: 
+![Status completed](assets/status-completed.png)
+Note: If the task status is completed, the color will be black and the text will be stripped
 
-![Task Form Part](assets/TaskForm.png)
-* Footer: 
+* Task Additional
 
-![Footer Part](assets/Footer.png)
+<video width="1000" height="500" controls>
+  <source src="assets/add-task.mp4" type="video/mp4">
+</video>
+

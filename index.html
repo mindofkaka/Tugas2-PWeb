@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tugas 1 Pemrograman Web</title>
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
     </head>
     <body>
         <header>
@@ -16,16 +15,20 @@
                 <h3 class="list-title">Task List</h3>
                 <ul class="task-section">
                     <li class="task-text">
-                        <input type="checkbox" checked> <a class="task-finished">Task 1</a>
+                        <input type="checkbox" class="task-check" checked> 
+                        <span class="task-label">Task 1</span>
+                    </li>
+                    <li class="task-text" >
+                        <input type="checkbox" class="task-check"> 
+                        <span class="task-label">Task 2</span>
                     </li>
                     <li class="task-text">
-                        <input type="checkbox"> Task 2
+                        <input type="checkbox" class="task-check"> 
+                        <span class="task-label">Task 3</span>
                     </li>
-                    <li class="task-text">
-                        <input type="checkbox"> Task 3
-                    </li>
-                    <li class="task-text">
-                        <input type="checkbox"> Task 4
+                    <li class="task-text" >
+                        <input type="checkbox" class="task-check"> 
+                        <span class="task-label">Task 4</span>
                     </li>
                 </ul>
             </div>
@@ -48,6 +51,10 @@
                         <option value="completed">Completed</option>
                     </select><br>
                 </div>
+                <div class="form-group">
+                    <h5 class="details-subtitle">Deadline</h5>
+                    <input type="date" name="task-deadline">
+                </div>
                 <button type="submit" class="details-button">Update Task</button>
             </div>
         </aside>
@@ -60,6 +67,10 @@
             <div class="form-group">
                 <label class="form-text">Task Description</label>
                 <textarea name="task-description" placeholder="Enter task description"></textarea><br>
+            </div>
+            <div class="form-group">
+                <label class="form-text">Task Deadline</label>
+                <input type="date" name="task-deadline">
             </div>
             <button type="submit" class="form-button">Add Task</button>
         </form>
@@ -75,5 +86,6 @@
                 &copy; Kaka 2026
             </div>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
