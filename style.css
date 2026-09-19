@@ -3,6 +3,39 @@ body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode {
+    background-color: #091540;
+    color: #abd2fa;
+}
+
+body.dark-mode .task-list {
+  background-color: #1f2937;
+}
+
+body.dark-mode .task-text {
+  color: #f9fafb;
+}
+
+body.dark-mode .task-list .list-title {
+  color: #f9fafb;
+}
+
+body.dark-mode .task-done {
+  color: #9ca3af;
+  text-decoration: line-through;
+}
+
+body.dark-mode .task-in-progress {
+  color: #fbbf24;
+  font-style: italic;
+}
+
+body.dark-mode .task-label {
+  color: #f9fafb;
 }
 
 *, *::before, *::after {
@@ -10,11 +43,9 @@ body {
 }
 
 header {
-    margin-top: 0;
-    margin-left: 0;
-    width: 100%;
     text-align: center;
     background-color: #1b2cc1;
+    position: relative;
 }
 
 header h1 {
@@ -25,6 +56,17 @@ header h1 {
 
 .header-text {
     color: #abd2fa;
+}
+
+header #theme-toggle {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    background-color: #1b2cc1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 aside {
@@ -91,6 +133,20 @@ aside {
 .task-details {
     background-color: #091450;
     padding: 25px;
+}
+
+.delete-task {
+    margin-left: auto;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.delete-task:hover {
+    background-color: #ff1a1a;
 }
 
 .detail-text {
@@ -201,6 +257,14 @@ aside {
         font-size: 1.6rem;
     }
 
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+
     .task-details,
     .task-form {
         padding: 20px 15px;
@@ -219,5 +283,11 @@ aside {
 
     .task-text {
         margin-left: 10px;
+    }
+
+    #theme-toggle {
+        position: static;
+        display: block;
+        margin: 0 auto;
     }
 }

@@ -81,6 +81,22 @@ function renderTaskList() {
             label.classList.add('task-in-progress')
         }
 
+        //delete task
+        const deleteBtn = document.createElement('button')
+        deleteBtn.type = 'button'
+        deleteBtn.className = 'delete-task'
+        deleteBtn.textContent = 'Delete'
+    
+        deleteBtn.addEventListener('click', (e) => {
+            e.stopPropagation()
+    
+            const index = tasks.findIndex(t => t.id === task.id)
+            if(index !== -1) {
+                tasks.splice(index, 1)
+                renderTaskList()
+            }
+        })
+
         checkbox.addEventListener('change', () => {
             const currentTask = tasks.find(t => t.id === task.id)
             
@@ -119,8 +135,11 @@ function renderTaskList() {
         })
         li.appendChild(checkbox)
         li.appendChild(label)
+        li.appendChild(deleteBtn)
         taskList.appendChild(li)
     })
+
+
 }
 
 renderTaskList()
@@ -168,4 +187,11 @@ addTaskForm.addEventListener('submit', function(e) {
     tasks.push(newTask)
     renderTaskList()
     addTaskForm.reset()  
+})
+
+//theme settings
+const themeToggle = document.getElementById('theme-toggle')
+
+themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode')
 })
